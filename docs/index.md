@@ -21,7 +21,7 @@ available, and an update script that will let you update your copies.
 
 ## Installation
 
-    git clone https://github.com/greg0ire/git_template ~/.git_template
+    git clone https://github.com/jdahern/git_template ~/.git_template
 
 ## Configuration
 
@@ -49,5 +49,5 @@ Don't fear, [it is perfectly safe][init-manpage].
 You can also run the update script from a project created before your switch
 to `git_template`, but be aware that any hook you created yourself will be deleted.
 
-[0]: https://github.com/greg0ire/git_template
+[0]: https://github.com/jdahern/git_template
 [init-manpage]: https://git-scm.com/docs/git-init
