@@ -2,7 +2,7 @@
 . .git/hooks/git_config_wrapper.sh
 
 # set this to your active development branch
-get_hook_config jira commit-regex commit_regex required
+get_hook_config jira commitregex commitregex required
 current_branch="$(git rev-parse --abbrev-ref HEAD)"
 
-.git/hooks/jira/check_branch_and_message.sh "$commit_regex" "$current_branch" "$1"
+.git/hooks/jira/check_branch_and_message.sh "$commitregex" "$current_branch" "$1"
