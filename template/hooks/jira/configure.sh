@@ -8,7 +8,7 @@ main() {
 	if [ -z $REPLY ]; then
 	    REPLY="^(DEV-[0-9]+|merge)"
 	fi
-	git config hooks.jira.commitregex "$REPLY"
+	git config --add hooks.jira.commitregex "$REPLY"
     fi
 }
 
