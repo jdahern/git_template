@@ -4,9 +4,9 @@
 main() {
     if hook_is_enabled junkchecker
     then
-	read -p "Regex to use for checking the message with. Default: \"$GIT_DIR/hooks/junkchecker/junk-phrases.sample\"? "
+	read -p "File name that contains one forbidden phrase per line. Default: \".git/hooks/junkchecker/junk-phrases.sample\"? "
 	if [ -z $REPLY ]; then
-	    REPLY="$GIT_DIR/hooks/junkchecker/junk-phrases.sample"
+	    REPLY=".git/hooks/junkchecker/junk-phrases.sample"
 	fi
 	git config hooks.junkchecker.phrasesfile "$REPLY"
     fi
